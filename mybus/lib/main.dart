@@ -7,7 +7,7 @@ void main() => runApp(const MyApp());
 final ThemeData defaultTheme = ThemeData(
   primaryColor: Colors.indigo,
   colorScheme: ColorScheme.fromSwatch().copyWith(
-    secondary: Color.fromARGB(66, 200, 25, 25),
+    secondary: const Color.fromARGB(66, 200, 25, 25),
   ),
 );
 

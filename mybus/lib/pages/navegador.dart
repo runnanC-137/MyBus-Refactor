@@ -71,9 +71,8 @@ List<Row> buttonsGenerate(BuildContext context) {
     'login',
     'cadastro',
     'mapa',
-    'tutorial',
     'info',
-    'feedback'
+    'feedback',
   ];
   List<Row> rowList = [];
   for (String navName in lista) {

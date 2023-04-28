@@ -37,6 +37,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   validadores: ^1.0.5
   geolocator: ^9.0.2
+  cloud_firestore: ^4.5.3
+  url_launcher: ^6.1.10
+  firebase_auth: ^4.4.2
+  http: ^0.13.5
+  adaptive_dialog: ^1.8.3
 
 dev_dependencies:
   flutter_test:

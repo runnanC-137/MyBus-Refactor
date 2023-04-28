@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:mybus/pages/login/index.dart';
-import 'package:mybus/pages/navegador.dart';
-//import 'package:mybus_unifesspa/telas/cadastro.dart';
-//import 'package:mybus_unifesspa/telas/feedback.dart';
+import 'pages/cadastro/index.dart';
+import 'pages/info/index.dart';
+import 'pages/login/index.dart';
+import 'pages/navegador.dart';
+import 'pages/feedback/index.dart';
+import 'pages/mapa/index.dart';
 //import 'package:mybus_unifesspa/telas/info.dart';
+//import 'package:mybus_unifesspa/telas/feedback.dart';
 //import 'package:mybus_unifesspa/telas/mapa.dart';
 //import 'package:mybus_unifesspa/telas/tutorial.dart';
 
@@ -16,16 +19,16 @@ class MyRouter {
         );
       case "login":
         return MaterialPageRoute(builder: (_) => Login());
-      /*case "cadastro":
+      case "cadastro":
         return MaterialPageRoute(builder: (_) => Cadastro());
-      //case "tutorial":
-        //return MaterialPageRoute(builder: (_) => Tutorial());
-      case "mapa":
-        return MaterialPageRoute(builder: (_) => Mapa());
       case "info":
         return MaterialPageRoute(builder: (_) => Info());
       case "feedback":
-        return MaterialPageRoute(builder: (_) => FeedbackApp()); */
+        return MaterialPageRoute(builder: (_) => FeedbackApp());
+      /*case "tutorial":
+        return MaterialPageRoute(builder: (_) => Tutorial());
+      case "mapa":
+        return MaterialPageRoute(builder: (_) => Mapa());*/
       default:
         return _erroRota();
     }
@@ -35,9 +38,9 @@ class MyRouter {
     return MaterialPageRoute(builder: (_) {
       return Scaffold(
         appBar: AppBar(
-          title: Text("Tela não encontrada!"),
+          title: const Text("Tela não encontrada!"),
         ),
-        body: Center(
+        body: const Center(
           child: Text("Tela não encontrada!"),
         ),
       );
