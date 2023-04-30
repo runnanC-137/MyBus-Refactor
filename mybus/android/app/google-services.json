@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "338295389405",
+    "project_id": "wikibus-7ac7e",
+    "storage_bucket": "wikibus-7ac7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338295389405:android:eaf84f6c6c976d31e12f34",
+        "android_client_info": {
+          "package_name": "com.example.mybus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338295389405-nt6v5f0ngmshhtgfo079uqr4mdgs2tpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD28c3SlVJCkxUQ13L5L_Smm2YahYpTN4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338295389405-nt6v5f0ngmshhtgfo079uqr4mdgs2tpr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
