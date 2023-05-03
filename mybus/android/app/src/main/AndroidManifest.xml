@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mybus">
+    package="com.unifespa.mybus">
    <application
         android:label="mybus"
         android:name="${applicationName}"
