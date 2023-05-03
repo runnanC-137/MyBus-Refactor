@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'pages/cadastro/cadastro_page.dart';
-import 'pages/info/index.dart';
-import 'pages/login/index.dart';
+import 'pages/info/info.dart';
+import 'pages/login/login_page.dart';
 import 'pages/navegador.dart';
 import 'pages/feedback/feedback.dart';
 

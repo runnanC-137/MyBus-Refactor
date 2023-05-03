@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:mybus/pages/login/index.dart';
+import 'package:mybus/pages/login/login_page.dart';
 import 'package:mybus/pages/navegador.dart';
 import 'package:mybus/services/auth-service.dart';
 import 'package:provider/provider.dart';
 
 import '../pages/feedback/feedback.dart';
+import '../pages/navegacao/splash_screen_page.dart';
 
 class AuthCheck extends StatefulWidget {
   AuthCheck({Key? key}) : super(key: key);
@@ -28,7 +29,8 @@ class _AuthCheckState extends State<AuthCheck> {
       _init();
       return loading();
     } else if (auth!.user == null) {
-      return Login();
+      /* return Login(); */
+      return SplashScreen();
     } else {
       return const Navegador(title: 'title');
     }
