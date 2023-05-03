@@ -6,14 +6,15 @@ class AuthService extends ChangeNotifier {
   User? user;
   bool isLoading = true;
 
-  AuthService() {
+/*   AuthService() {
     _authCheck();
   }
-
-  _authCheck() {
+ */
+  authCheck(Function calback) {
     _auth.authStateChanges().listen((User? authUser) {
       user = (user == null) ? null : authUser;
       isLoading = false;
+      calback();
       print(isLoading);
       print('0000');
     });
