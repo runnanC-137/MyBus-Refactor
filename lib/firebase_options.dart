@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,19 +49,9 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDiXBHltbRJhub0ysN3Z5XS-JEZIfLx-G4',
-    appId: '1:338295389405:web:f02a2323d4a773c7e12f34',
-    messagingSenderId: '338295389405',
-    projectId: 'wikibus-7ac7e',
-    authDomain: 'wikibus-7ac7e.firebaseapp.com',
-    storageBucket: 'wikibus-7ac7e.appspot.com',
-    measurementId: 'G-2NTDZSSQS5',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyD28c3SlVJCkxUQ13L5L_Smm2YahYpTN4Q',
-    appId: '1:338295389405:android:eaf84f6c6c976d31e12f34',
+    appId: '1:338295389405:android:13af706f00e3644de12f34',
     messagingSenderId: '338295389405',
     projectId: 'wikibus-7ac7e',
     storageBucket: 'wikibus-7ac7e.appspot.com',
@@ -63,21 +59,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBz9TJBgnuftSyJPsgCUNNGia9ZaDg9koA',
-    appId: '1:338295389405:ios:726992dba1ee1c1ee12f34',
+    appId: '1:338295389405:ios:413e1d2a55b9ff1ce12f34',
     messagingSenderId: '338295389405',
     projectId: 'wikibus-7ac7e',
     storageBucket: 'wikibus-7ac7e.appspot.com',
-    iosClientId: '338295389405-0clc4onrm553f9ih5bu18s0i6pij8p0s.apps.googleusercontent.com',
-    iosBundleId: 'com.example.mybus',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBz9TJBgnuftSyJPsgCUNNGia9ZaDg9koA',
-    appId: '1:338295389405:ios:726992dba1ee1c1ee12f34',
-    messagingSenderId: '338295389405',
-    projectId: 'wikibus-7ac7e',
-    storageBucket: 'wikibus-7ac7e.appspot.com',
-    iosClientId: '338295389405-0clc4onrm553f9ih5bu18s0i6pij8p0s.apps.googleusercontent.com',
-    iosBundleId: 'com.example.mybus',
+    iosClientId: '338295389405-p2rtogu7pevvq7vqmsaclfrvb2eu7brs.apps.googleusercontent.com',
+    iosBundleId: 'com.unifesspa.mybus',
   );
 }

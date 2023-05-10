@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:338295389405:android:eaf84f6c6c976d31e12f34",
+        "mobilesdk_app_id": "1:338295389405:android:13af706f00e3644de12f34",
         "android_client_info": {
-          "package_name": "com.example.mybus"
+          "package_name": "com.unifesspa.mybus"
         }
       },
       "oauth_client": [
@@ -29,6 +29,13 @@
             {
               "client_id": "338295389405-nt6v5f0ngmshhtgfo079uqr4mdgs2tpr.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "338295389405-0clc4onrm553f9ih5bu18s0i6pij8p0s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mybus"
+              }
             }
           ]
         }
